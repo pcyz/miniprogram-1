@@ -1,0 +1,29 @@
+<!--pages/productDetail/productDetail.wxml-->
+<!-- 搜索出来的菜谱列表 -->
+<!-- 搜索框 -->
+<view class="top">
+    <view class="search">
+        <input type="text" 
+        placeholder="今天想吃啥" 
+        bindconfirm="shopList" 
+        confirm-type="search"
+        value="{{searchText}}"
+        />
+        <image src="cloud://test-9grmo6ha3e8e68fb.7465-test-9grmo6ha3e8e68fb-1309510381/images/search.png"></image>
+    </view>
+</view>
+
+<!-- 菜谱列表 -->
+<view class="product">
+    <view class="pro">
+        <view class="productList" wx:for="{{searchResult}}" wx:key="_id">
+            <navigator url="../detail/detail?id={{item._id}}&title={{item.title}}">
+                <image src="{{item.imgUrl}}" mode="scaleToFill"></image>
+              <view class="remen-title">
+                <view>{{item.title}}</view>
+                <view class="remen-into">{{item.intro}}</view>
+              </view>
+            </navigator>
+        </view>
+    </view>
+</view>

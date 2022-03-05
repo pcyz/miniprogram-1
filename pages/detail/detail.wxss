@@ -1,0 +1,90 @@
+/* pages/detail/detail.wxss */
+.body{
+  background-color: rgb(255, 255, 255);
+}
+image{
+  width: 100%;
+}
+.make{
+  margin-left: 20rpx;
+}
+.main{
+  margin-top: 30rpx;
+}
+.mainTitle{
+  font-size: 20px;
+  margin-bottom: 20rpx;
+}
+.mainList{
+  font-size: 18px;
+  padding-left: 10rpx;
+}
+.zuofa{
+  margin-top: 30rpx;
+  font-size: 20px;
+}
+.zuofaList{
+  margin: 10rpx 20rpx 20rpx 20rpx;
+  border-radius: 3px;
+  box-shadow: 5rpx 2rpx 3rpx rgb(126, 96, 96);
+  font-size: 18px;
+  background-color: #fff;
+  border: 1px solid #543654;
+}
+.zuofaItem{
+  padding-top: 10rpx;
+  padding-left: 10rpx;
+  font-size: 16px;
+}
+
+.shoucang{
+  float: left;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1rpx solid #000
+}
+.dianzan{
+  float: right;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1rpx solid #000
+}
+.image{
+  width:80rpx;
+  height: 80rpx;
+}
+.pinglun{
+  vertical-align: center;
+  text-align: center;
+  font-size:20px;
+}
+.pinglunItem{
+  border-bottom:2px solid gainsboro;
+  margin-left: 50rpx;
+  margin-top: 30rpx;
+}
+.fabiao{
+  position: relative;
+  margin-top:100rpx;
+  margin-left: 30rpx;
+}
+.input{
+  position: absolute;
+  display: inline-block;
+  border-radius: 5px;
+  bottom:0rpx;
+  left:0rpx;
+  width:75%;
+  height: 20px;
+}
+.btn{
+  position: absolute;
+  bottom:0rpx;
+  right:0rpx;
+  width:20%;
+  margin-top: 20rpx;
+  background-color: beige;
+  color: white;
+}

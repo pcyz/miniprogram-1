@@ -1,0 +1,42 @@
+<!--pages/detail/detail.wxml-->
+<view class="body">
+  <image src="{{detail.imgUrl}}"></image>
+  <view class="make">
+    <view class="main">
+      <view class="mainTitle"> 主料：</view>
+      <view class="mainList">{{detail.main}}</view>
+    </view>
+    <view class="main">
+      <view class="mainTitle">辅料：</view>
+      <view class="mainList">{{detail.ingredients}}</view>
+    </view>
+    <view class="zuofa">
+    <view class="zuofaTitle">做法：</view>
+      <view class="buzhou" wx:for="{{detail.steps}}" wx:key="*this">
+        <view class="zuofaList">
+          <view>步骤{{index+1}}</view>
+          <view class="zuofaItem">{{item}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="jiaoliu">
+    <view class="shoucang"><image class="image" src="{{shoucangUrl}}" bindtap="shoucang"></image></view>
+    <view class="dianzan"><image class="image" src="{{dianzanUrl}}" bindtap="dianzan"></image></view>
+  </view>
+<!-- 评论内容 -->
+  <view>
+    <view class="pinglun">评论内容</view>
+    <block wx:for="{{detail.pinglun}}" wx:key="*this">
+    <view class="pinglunItem">
+      <text>{{item.name}}：</text>
+      <text>{{item.content}}</text>
+    </view>
+    </block>
+  </view>
+  <!-- 发表评论 -->
+  <view class="fabiao">
+  <input type="text" class="input" placeholder="请输入评论内容"/>
+  <button size="mini" type="primary" class="btn">发表评论</button>
+  </view>
+</view>

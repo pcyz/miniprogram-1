@@ -1,0 +1,19 @@
+// app.js
+wx.cloud.init()
+App({
+  onLaunch(){
+    wx.cloud.callFunction({
+      name:'getUserOpenid'
+    }).then(res=>{
+      console.log(res)
+        wx.setStorage({
+          key:'openid', 
+          data:res.result.openid
+        })
+    })
+  },
+  globalData:{
+    userInfo:null,
+    openid:null,
+  }
+})

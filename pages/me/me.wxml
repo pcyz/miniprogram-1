@@ -1,0 +1,12 @@
+<view>
+  <view class="wrap">
+    <image src="{{userInfo.avatarUrl}}" class="face"></image>
+    <view class="nickname">{{userInfo.nickName}}</view>
+  </view>
+  <button bindtap="login" wx:if="{{userInfo == null}}" type="primary">授权登录</button>
+  <view  wx:if="{{userInfo != null}}">
+    <button bindtap="updataImg" type="primary">更新头像</button>
+    <button bindtap="loginOut" type="primary">退出登录</button>
+  </view>
+  
+</view>

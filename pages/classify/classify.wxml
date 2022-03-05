@@ -1,0 +1,33 @@
+<!--pages/classify/classify.wxml-->
+<view class="menu">
+     <button class="btn">肉类</button>
+     <button class="btn">饼</button>
+  </view>
+   <view class="menu">
+     <button class="btn">吃吃</button>
+     <button class="btn">炒菜</button>
+  </view>
+   <view class="menu">
+     <button class="btn">素</button>
+     <button class="btn">我爱</button>
+  </view>
+   <view class="menu">
+     <button class="btn">主食</button>
+     <button class="btn">菜</button>
+  </view>
+   <view class="menu">
+     <button class="btn">爱心早餐</button>
+     <button class="btn">独特川凉菜</button>
+  </view>
+   <view class="menu">
+     <button class="btn">面食主食类</button>
+     <button class="btn">凉拌素拌菜</button>
+  </view>
+   <view class="menu">
+     <button class="btn">独特精品菜</button>
+     <button class="btn">奇葩小吃类</button>
+  </view>
+   <view class="menu">
+     <button class="btn">年夜饭</button>
+     <button class="btn">每日菜单</button>
+  </view>

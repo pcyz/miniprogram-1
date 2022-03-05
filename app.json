@@ -1,0 +1,47 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/classify/classify",
+        "pages/collection/collection",
+        "pages/me/me",
+        "pages/detail/detail",
+        "pages/productDetail/productDetail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#62BAE7",
+        "navigationBarTitleText": "私人厨房",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "backgroundColor": "#f9f9f9",
+        "color": "#676767",
+        "selectedColor": "#1296db",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text":"首页",
+            "iconPath": "images/bar/bar001-old.png",
+            "selectedIconPath": "images/bar/bar001-new.png"
+        },{
+            "pagePath": "pages/classify/classify",
+            "text": "分类",
+            "iconPath": "images/bar/bar002-old.png",
+            "selectedIconPath": "images/bar/bar002-new.png"
+        },
+        {
+            "pagePath": "pages/collection/collection",
+            "text": "收藏",
+            "iconPath": "images/bar/bar003-old.png",
+            "selectedIconPath": "images/bar/bar003-new.png"
+        },
+        {
+            "pagePath": "pages/me/me",
+            "text": "我的",
+            "iconPath": "images/bar/bar004-old.png",
+            "selectedIconPath": "images/bar/bar004-new.png"
+        }
+    ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

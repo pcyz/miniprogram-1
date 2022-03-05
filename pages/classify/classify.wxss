@@ -1,0 +1,14 @@
+/* pages/classify/classify.wxss */
+.content{
+  background-color: #f2f2f2;
+  height: 600px;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.btn{
+  width: 45%;
+  background-color: #EFEEEC;
+  }

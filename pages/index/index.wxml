@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="top ns">
+    <view class="search">
+        <input type="text" 
+        placeholder="今天想吃啥" 
+        bindconfirm="search" 
+        confirm-type="search"
+        value="{{searchText}}"
+        />
+        <image src="cloud://test-9grmo6ha3e8e68fb.7465-test-9grmo6ha3e8e68fb-1309510381/images/search.png"></image>
+    </view>
+</view>
+
+<view class="today">
+  <view class="today-title">- 今日精选 -</view>
+  <view class="remen-list">
+    <view wx:for="{{listData}}"  wx:key="*this">
+      <view class="remen-new"  bindtap="gotoDetail" data-item="{{item}}">
+          <image src="{{item.imgUrl}}" mode="scaleToFill"></image>
+        <view class="remen-title">
+          <view>{{item.title}}</view>
+          <view class="remen-into">{{item.intro}}</view>
+        </view>
+      </view>  
+    </view>
+  </view>
+</view>
